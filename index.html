@@ -1,31 +1,127 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta charset="utf-8">
-<title>index.html</title>
-<link href="styles/style.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-</head>
+<meta name="viewport" content="width=device-width; initial-scale=1;">
+<title>Sweetbot.design</title>
+<meta name="description" content="A jquery light weight image slideshow plugin. Full width and fully responsive simple image slider with fade in and fade out effect.">
+<meta name="keywords" content="jquery slideshow, full width slideshow, simple slideshow, simple image slider, responsive slider, full width responsive slider">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Samir Das">
+<meta name="language" content="EN">
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="src/skdslider.min.js"></script>
+<script src="src/skdslider.js"></script>
+<link href="src/skdslider.css" rel="stylesheet" type="text/css">
 
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#demo1').skdslider({delay:1500, animationSpeed: 2000,showNextPrev:true,showPlayButton:true,autoSlide:true,animationType:'fading'});
+			jQuery('#demo2').skdslider({delay:1500, animationSpeed: 1000,showNextPrev:true,showPlayButton:false,autoSlide:true,animationType:'sliding'});
+			jQuery('#demo3').skdslider({delay:1500, animationSpeed: 2000,showNextPrev:true,showPlayButton:true,autoSlide:true,animationType:'fading'});
+			
+			jQuery('#responsive').change(function(){
+			  $('#responsive_wrapper').width(jQuery(this).val());
+			  $(window).trigger('resize');
+			});
+			
+		});
+</script>
+</head>
+	
+	
+	
 <body>
-<header><h1><img src="images/sweetbot_logo.png" alt="sweetbotdesign"></h1></header>
-<nav>
-	<ul>
-		<li><a href="#" target="_self">Forside</a></li>
-		<li><a href="vejledning.html" target="_self">Vejledning</a></li>
-		<li><a href="hotbot.html" target="_self">Hotbot.Design</a></li>
+
+<div><nav id="stickynav">
+	
+		<a href="#" target="_self"><img class="sweetbot-logo" src="images/sweetbot_logo.png" alt="sweetbotdesign"></a>
+		<ul>
+		<li><a href="#" target="_self">FORSIDE</a></li>
+		<li><a href="info.html" target="_self">INFO</a></li>
+		<li><a href="book.html" target="_self">BOOK</a></li>
+		<li><a href="search.html" target="_self">S&Oslash;G</a></li>
 	</ul>
 </nav>
-<img class="webdesign" src="images/webdesign.jpg" alt="webdesign">
-
-<div class="content">
-	Lorem ipsum dolor sit amet, adipiscing velit vestibulum, massa tincidunt sed sollicitudin amet, maecenas malesuada praesent pellentesque, urna sollicitudin feugiat rutrum, nascetur sed tortor nulla felis sed lectus. Praesent nascetur sodales lorem luctus a, metus sem tempor amet eros. Et ante tempor, in vehicula maecenas sapien, fringilla tortor nulla, libero facilisi fusce. Dignissim et in fringilla varius pede faucibus, nonummy velit nascetur in cursus, wisi condimentum. Aliquet vitae vestibulum, ipsum wisi est nonummy voluptatum phasellus.
-Malesuada a. Et a, feugiat eget magna augue nec nisl, habitasse vulputate convallis, imperdiet sit et, laoreet nec wisi sed. Fringilla commodo condimentum curabitur at sapien amet, sit risus facere, libero integer, eget porta nibh wisi quis. Dolor praesent pede pellentesque, malesuada nunc tempor dolor, eu velit duis donec ultrices praesent, fringilla vel sollicitudin a, donec nec. Hendrerit euismod suspendisse nonummy id ut, ante ante mauris a. Nonummy praesent lacus suspendisse dolor, arcu ullamcorper volutpat dui et dictum pharetra, bibendum ante nec irure, et maecenas a auctor tortor ante, est fusce placerat. Nibh ut ante dictum eros dolor, ac gravida, mauris a consequat itaque tristique ac, nulla mollis congue suscipit, nec vel dignissimos id fusce neque. Egestas cum sapien tempor tristique ad, justo porttitor quis enim sem, augue amet imperdiet odio. Vel litora quis duis, vestibulum tempus mauris nam, metus vestibulum per porta in in, dolorum fusce ante duis fames tellus, non a. Viverra egestas placerat feugiat consectetuer, in dictumst sagittis bibendum. At sollicitudin ultricies aliqua inceptos sit. Quibusdam posuere nulla, condimentum augue augue.
-Magna ullamcorper. Mattis velit, ut scelerisque molestie diam nam, nullam sem quis, enim nec integer ultricies wisi purus, eget diam eros sed. Risus non lobortis orci lacus per, sit tortor vel sit eu netus, leo dictumst pharetra orci scelerisque nunc, cumque vel. Massa ipsum lorem, vestibulum semper nisl ut eu praesent, semper facilisis, cursus luctus mi nullam ipsum. Parturient dictum amet tortor in, in dis curabitur sed in nec a, per dolor pede in ante, accumsan eros rutrum, sed nulla augue tincidunt massa velit. Ut vel nulla class diam montes, erat odio eu, parturient purus, et congue justo cursus. Libero rutrum mi odio, in cum vitae justo fusce. Quisque sit cursus ante sit laoreet. Aenean neque ultrices suscipit ut pellentesque urna, libero habitant gravida, elit et neque nisl eros, ante facilisis mauris mi. Nec accumsan lorem pharetra, nunc at mollis purus taciti et, diam turpis fusce donec pulvinar ac consectetuer.
 </div>
+<div><header><h1>SWEETBOT.DESIGN</h1></header></div>
+<div class="skdslider">
+    <ul id="demo1" class="slides">
+<li>
+<img class="img" src="images/webdesign.jpg" alt="webdesign"/>
+<!--Slider Description example-->
+ <div class="slide-desc">
+  </div>
+</li>
+<li><img class="img" src="images/webdesign_01.jpg" alt="webdesign_01"/>
+   <div class="slide-desc">
+  </div>
+</li>
+<li><img class="img" src="images/webdesign_02.jpg" alt="webdesign_02" />
+<!--NO Description Here-->
+</li>
+<li><img class="img" src="images/webdesign_03.jpg" alt="webdesign_03"/>
+  <div class="slide-desc">
+		
+  </div>
+</li>
 
-<footer class="site-footer">
+</ul>
+</div>
+	<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7175253790862528";
+/* SKDSlider */
+google_ad_slot = "4030515492";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><br />
 
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7175253790862528";
+/* SKDSlider */
+google_ad_slot = "4030515492";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3415878-12', 'dandywebsolution.com');
+  ga('send', 'pageview');
+
+</script>
+
+	
+
+
+<div class="hotbot">
+	<hr>
+	<h5>Hotbot by Sweetbot.design</h5>
+	<img class="hotbot-logo" src="images/hotbot_logo.png" alt="hotbot-logo">
+	<div class="hotbot-text"><h2>F&oslash;lg hvert skridt i udviklingen!</h2>
+	<p>V&aelig;r med i processen!
+	<br>V&aelig;r din egen designer!
+	<br>G&aring; ind i vores website Hotbot og kig p&aring; vores pakker!</p>
+	</div>
+</div>
+	
+	
+<div><footer class="site-footer">
 	<div class="footer">
 	<div class="tlf-logo"><img src="images/ring.png" alt="tlf-logo"></div>
 		<div class="tlf">+45 36 15 45 00
@@ -37,5 +133,8 @@ Magna ullamcorper. Mattis velit, ut scelerisque molestie diam nam, nullam sem qu
 		</div>
 	
 </footer>
+</div>
+
+
 </body>
 </html>

@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-* {
-    box-sizing: border-box;
-}
 body {
 	background: #FFF;
 	margin: 0;
@@ -18,15 +15,9 @@ body {
 .option-table td {
 	border-bottom: 1px #eeeeee solid;
 }
-/* Main navigation */
-.sweetbot-logo {
-	position: absolute;
-	left: 64px;
-	top: 64px;
-	width: 300px;
-	overflow: hidden;
-}
-#stickynav {		
+#stickynav {	
+	margin: 0;
+    padding: 0;	
 	text-align: right;
 }
 #stickynav ul {
@@ -40,11 +31,24 @@ body {
 	display: block;
     padding: 14px 20px;
     color: #3D6BB4;
-    font-size: 25px;
+    font-size: 34px;
     text-decoration: none;
 }
 ul a:hover {
 	background-color: #749CD3;
+}
+.sweetbot-logo {
+	position: absolute;
+	left: 10px;
+	top: 30px;
+	width: 400px;
+	overflow: hidden;
+}
+.webdesign-image {
+	width: 80%;
+	margin: auto;
+	padding-top: 40px;
+	display: block;
 }
 .content {
 	margin: 50px;
@@ -72,38 +76,24 @@ hr {
     border-style: inset;
     border-width: 5px;
 }
-/* info.html / book.html text sizes */
 .info { 
     display: block;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 100px;;
+    margin-bottom: 100px;;
     margin-left: auto;
     margin-right: auto;
-	background-color: #3D6BB4;
-	height: 100px;
-	padding: 20px;
+    border-style: inset;
+	border-bottom-color: #3D6BB4;
+    border-width: 20px;
 }
 p {
-	margin-left: auto;
-	margin-top: 50px;
+	margin-left: 50px;
 	padding-left: 100px;
-	font-family: 'Lato', sans-serif;
-	font-size: 16px;
-}
-.hvemervi {
-	margin-left: 200px;
-	padding-left: 100px;
-	font-family: 'Lato', sans-serif;
-	font-size: 20px;
-}
-.image_ide {
-	width: 80%;
-	display: block;
-	margin: auto;
 }
 section {
     display: block;
-    height: auto;
+    padding-top: 90px;
+    height: 50vh;
     width: 100vw;
     overflow: hidden;
 }
@@ -126,7 +116,6 @@ section {
 	width: 600px;
 	left: 150px;
 }
-
 .site-footer {
 	background-color: #EAEAEA;
 	background-size: cover;
@@ -159,32 +148,4 @@ section {
 	margin-top: 50px;
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
-}
-
-@media screen and (max-width : 768px) {
-
-	h1 {
-    font-size: larger;
-    text-align: center;
-    margin-top: 0px;
-}
-footer {
-		display: none;
-	}	
-
-nav ul li {
-	text-align: center;
-	width: 100%;
-	border-bottom: 1px solid white;
-}
-/* responsive dropdown styles*/
-nav ul li:hover > ul {
-	position: static;
-	display: block;
-	width: 100%;
-}
-nav ul ul li {
-	display: block;
-	width: 100%;
-	background-color: #BB898A;
 }
