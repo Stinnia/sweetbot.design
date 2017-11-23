@@ -5,8 +5,8 @@
 }
 body {
 	background: #FFF;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	font-family: 'Lato', sans-serif;
 	font-size: 34px;
 	width: 100%;
@@ -28,24 +28,25 @@ body {
 .sweetbot-logo {
 	position: absolute;
 	left: 160px;
-	top: 80px;
-	width: 400px;
+	top: 64px;
+	width: 300px;
 	overflow: hidden;
 }
-#stickynav {		
-	text-align: right;
+#stickynav {	
+	float: right;
+	width: 40%;
 	font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
 	font-weight: bold;
+	margin-top: 64px;
 }
 #stickynav ul {
 	list-style-type: none;
+	margin:0;
+	padding: 0;
 }
 #stickynav ul li {
 	margin: 0px;
-    display: inline-block;	
-	position: relative;
-	right: 200px;
-	top: 60px;
+    display: inline-block;
 }
 #stickynav a {
 	display: block;
@@ -69,53 +70,55 @@ ul a:hover {
 	font-size: 16px;
 }
 h1 {
+	font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
 	text-align: center;
 	color: #3d6bb4;
 	font-size: 40px;
 	padding-top: 60px;
 }
 h2 {
-	text-align: center;
+	text-align: left;
 	color: #3d6bb4;
 	font-size: 30px;
 	padding-top: 60px;
+	margin-left: 200px;
+	
+}
+h3 {
+	text-align: center;
+	color: #3d6bb4;
+	font-size: 20px;
+	padding-top: 0px;
 }
 
 /* info.html / book.html text sizes */
 
-.hotbot-text p {
-	margin: auto;
+
+p {
+	margin-left: 200px;
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	text-align: left;
-	line-height: 40px;
-}
-p {
-	margin: 50px;
-	font-family: 'Lato', sans-serif;
-	font-size: 20px;
-	text-align: center;
 	line-height: 40px;
 }
 
 .hvemervi {
-	padding: 0 20% 0 20%;
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	text-align: left;
+	line-height: 25px;
 }
-.info { 
-    display: block;
-	background-color: #749CD3;
-	width: 100%;
-	height: 100px;
-	padding: 20px;
-	margin: 120px 0 120px 0;
-}
+
+
 .image_ide {
-	width: 80%;
+	width: 70%;
 	display: block;
-	margin: auto;
+	margin: 20px;
+}
+.image_hands {
+	width: 30%;
+	display: block;
+	margin: 20px;
 }
 section {
     display: block;
@@ -124,33 +127,26 @@ section {
     overflow: hidden;
 }
 .hotbot {
-	margin: 0;
-	padding: 0;
-	height: 390px;	
-	background-color: #749CD3;
-	background-size: contain;
-	width: 100%;
-	display: inline-block;
-}
-.hotbot-text {
-	font-family: 'Lato', sans-serif;
-	font-size: 20px;
-	color: #3D6BB4;
-	display: inline-block;
-}
-.hotbot-logo {
-	display: inline-block;
-	width: 390px;
-	margin-left: 25%;
+	margin: auto;
+	display: block;
 }
 
+.hotbot-logo {
+	display: block;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 100px;
+	width:70%;
+}
+.image-hotbot {
+	width: 100%;
+}
 .site-footer {
-	background-color: #EAEAEA;
-	background-size: cover;
 	bottom: 0;
 	width: 100%;
-	height: 180px;
-	font-size: 16px;
+}
+.footer_image {
+	width: 100%;
 }
 
 .tlf-logo {
@@ -186,74 +182,66 @@ h1 {
     margin-top: 0px;
 }
 h2 {
-	text-align: center;
+	text-align: left;
 	color: #3d6bb4;
 	font-size: smaller;
 	padding-top: 60px;
+	margin-left: 10px
 }
 
 footer {
 		display: none;
 	}	
 .sweetbot-logo {
-	position: absolute;
-	top: 30px;
+	position: relative;
+	top: 42px;
+	left: 150px;
 	width: 200px;
 	overflow: hidden;
 }
-#stickynav ul li {
-	text-align: center;
-	width: 100%;
-}
-/* responsive dropdown styles*/
-#stickynav ul li:hover > ul {
+#stickynav {
+	float: none;
+	height: auto;
 	position: static;
-	display: block;
+	padding: 0;
 	width: 100%;
+	overflow: visible;
 }
-#stickynav ul ul li {
-	display: block;
+#stickynav ul li {
+	position: static;
 	width: 100%;
-	background-color: #BB898A;
-}
-.hotbot-text p {
-	margin-left: 40px;
-	font-family: 'Lato', sans-serif;
-	font-size: 15px;
+	display: block;
+	}
+	
+#stickynav a {
 	text-align: center;
-	line-height: smaller;
+	width: inherit;
+	top: 0px;
+	margin: 0;
+	padding: 5px 7px;
+	background: #DF9B67;
+	color: #3d6bb4;
+	-webkit-border-radius: 0px;
+	-moz-berder-radius: 0px;
+	border-radius: 0px;
+}
+#stickynav a:hover {
+		background: #DF9B67;
+}
+
+.hotbot-logo {
+	position: relative;
+	display: block;
+	width: 80%;
+	}
+.hotbot {
+	height: 150px;	
+	margin: 40px;
 }
 p {
 	margin: 0;
 	font-family: 'Lato', sans-serif;
-	font-size: 15px;
-	text-align: center;
-	line-height: smaller;
-}
-.hotbot-logo {
-	display: inline-block;
-	width: 390px;
-	margin-left: 5%;
-	}
-}
-.hotbot {
-	height: 100%;	
-	background-color: #749CD3;
-	background-size: contain;
-	width: 100%;
-	display: inline-block;
-}
-.hvemervi {
-	padding: 10px;
-	font-family: 'Lato', sans-serif;
-	font-size: 15px;
+	font-size: 12px;
 	text-align: left;
-}
-.info { 
-    display: block;
-	background-color: #749CD3;
-	width: 100%;
-	height: 100px;
 	padding: 20px;
-	margin: 25.5px 0 10px 0;
-}
+}}
