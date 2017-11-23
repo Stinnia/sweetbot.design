@@ -8,7 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato', sans-serif;
-	font-size: 25px;
+	font-size: 34px;
 	width: 100%;
 }
 .whole_body {
@@ -51,7 +51,7 @@ body {
 	display: block;
     padding: 14px 20px;
     color: #3D6BB4;
-    font-size: 23px;
+    font-size: 25px;
     text-decoration: none;
 }
 ul a:hover {
@@ -80,7 +80,7 @@ h2 {
 	color: #3d6bb4;
 	font-size: 30px;
 	padding-top: 60px;
-	margin-left: 400px;
+	margin-left: 200px;
 	
 }
 h3 {
@@ -92,24 +92,32 @@ h3 {
 
 /* info.html / book.html text sizes */
 
+
 p {
-	margin-left: 300px;
+	margin-left: 200px;
 	font-family: 'Lato', sans-serif;
-	font-size: 15px;
+	font-size: 20px;
 	text-align: left;
-	line-height: 20px;
+	line-height: 40px;
 }
 
+.hvemervi {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	text-align: left;
+	line-height: 25px;
+}
+
+
 .image_ide {
-	width: 60%;
+	width: 70%;
 	display: block;
-	position:relative;
+	margin: 20px;
 }
 .image_hands {
 	width: 30%;
 	display: block;
 	margin: 20px;
-	margin-bottom: 200px;
 }
 section {
     display: block;
@@ -222,7 +230,7 @@ footer {
 	background: #3d6bb4;
 	color: #DF9B67;
 	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
+	-moz-berder-radius: 0px;
 	border-radius: 0px;
 }
 #stickynav a:hover {
