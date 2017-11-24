@@ -80,7 +80,7 @@ h2 {
 	color: #3d6bb4;
 	font-size: 30px;
 	padding-top: 60px;
-	margin-left: 400px;
+	margin-left: 300px;
 	
 }
 h3 {
@@ -110,6 +110,7 @@ p {
 	display: block;
 	margin: 20px;
 	margin-bottom: 200px;
+	margin-left: 200px;
 }
 section {
     display: block;
